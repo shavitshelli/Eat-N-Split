@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "./App.css";
-import  Button  from "./Button";
-import  FriensList from "./FriensList";
-import  FormAddFriend from "./FormAddFriend";
-import  FormSplitBill  from "./FormSplitBill";
+import Button from "./Button";
+import FriensList from "./FriensList";
+import FormAddFriend from "./FormAddFriend";
+import FormSplitBill from "./FormSplitBill";
 const initialFriends = [
   {
     id: 118836,
@@ -77,10 +77,9 @@ export default function App() {
         <FormSplitBill
           selectedFriend={selectedFriend}
           onSplitBill={handleSplitBill}
+          key={selectedFriend.id}
         />
       )}
     </div>
   );
 }
-
-
